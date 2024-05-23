@@ -1,0 +1,1 @@
+{0: 'Apple___Cedar_apple_rust', 1: 'Apple___healthy', 2: 'Potato___Late_blight', 3: 'Potato___healthy', 4: 'Tomato___Bacterial_spot', 5: 'Tomato___healthy'}
