@@ -1,4 +1,5 @@
 import os
+import PIL
 from flask import Flask, request, redirect, url_for, render_template
 from werkzeug.utils import secure_filename
 from model import predict_image
@@ -26,8 +27,8 @@ def upload_file():
         filename = secure_filename(file.filename)
         filepath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
         file.save(filepath)
-        prediction = predict_image(filepath)
-        return render_template('result.html', filename=filename, prediction=prediction)
+        predicted_class, confidence = predict_image(filepath)
+        return render_template('result.html', filename=filename, prediction=predicted_class, confidence="{:.2f}".format(confidence*100))
     return redirect(request.url)
 
 if __name__ == '__main__':
