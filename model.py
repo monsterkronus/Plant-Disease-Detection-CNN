@@ -4,21 +4,21 @@ from keras.preprocessing import image
 import numpy as np
 
 # Load your model (update the path as needed)
-model = load_model('./dataset/model/Model-6-Size-[150,150,3]-Conv[4]-Batch[64]-LR[0.001]-Epoch[50]-Plant Disease Sequential-98.13.h5')
+model = load_model('./dataset/model/Model-5-Size-[150,150,3]-Conv[4]-Batch[64]-LR[0.001]-Epoch[50]-Plant Disease Sequential-96.53.h5')
 
 plant_names = [
-    "Apple Cedar_apple_rust",
+    "Apple Cedar Apple Rust",
     "Apple Healty",
     "Grape Blackrot",
-    "Grape healthy",
-    "Peach Bacterial_spot",
-    "Peach healthy",
+    "Grape Healthy",
+    "Peach Bacterial Spot",
+    "Peach Healthy",
     "Potato Late blight",
-    "Potato healthy",
-    "Straweberry Leaf_scorch",
-    "Straweberry healthy",
-    "Tomato Bacterial spot",
-    "Tomato healthy",
+    "Potato Healthy",
+    "Strawberry Leaf Scorch",
+    "Strawberry Healthy",
+    "Tomato Bacterial Spot",
+    "Tomato Healthy",
     
 ]
 
